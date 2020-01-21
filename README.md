@@ -2,9 +2,15 @@
 
 CLI-template renderer like m4 but based on jinja
 
-## Usage example:
+## Installation
 
-Look at ./example/ directory.
+``` shell
+pip install jinjarg
+```
+
+## Usage example
+
+Take a look at [example](/example) directory.
 
 ## Why
 
