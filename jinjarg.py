@@ -1,6 +1,6 @@
 # coding: utf-8
 
-"""CLI-template renderer like m4 but based on Jinja2"""
+"""CLI-template renderer like m4 but based on Jinja2 and argparse"""
 
 from jinja2 import Template
 from argparse import ArgumentParser

@@ -2,7 +2,7 @@
 from setuptools import setup
 import os
 
-"""CLI-template renderer like m4 but based on jinja"""
+"""CLI-template renderer like m4 but based on jinja and argparse"""
 
 
 def read(*paths):
@@ -13,12 +13,12 @@ def read(*paths):
 
 setup(
     name='jinjarg',
-    version='0.0.2',
+    version='0.0.3',
     url='https://github.com/strizhechenko/jinjarg',
     license='MIT',
     author='Oleg Strizhechenko',
     author_email='oleg.strizhechenko@gmail.com',
-    description="CLI-template renderer like m4 but based on jinja",
+    description="CLI-template renderer like m4 but based on jinja and argparse",
     long_description=(read('README.md')),
     py_modules=['jinjarg'],
     platforms='any',
