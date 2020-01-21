@@ -1,0 +1,14 @@
+Look at {{ args.number }} example!
+
+{% if args.boolean %}
+    Flag --boolean is passed
+{% else %}
+    Flag --boolean is missing
+{% endif %}
+
+{% if args.iterable %}
+    {% for item in args.iterable %}- {{ item }}
+    {% endfor %}
+{% else %}
+    Flag --iterable is missing
+{% endif %}
