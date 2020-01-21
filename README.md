@@ -1,6 +1,6 @@
 # jinjarg
 
-CLI-template renderer like m4 but based on jinja
+CLI-template renderer like m4 but based on jinja2 and argparse.
 
 ## Installation
 
