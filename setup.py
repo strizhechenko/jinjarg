@@ -13,7 +13,7 @@ def read(*paths):
 
 setup(
     name='jinjarg',
-    version='0.0.3',
+    version='0.1.0',
     url='https://github.com/strizhechenko/jinjarg',
     license='MIT',
     author='Oleg Strizhechenko',
