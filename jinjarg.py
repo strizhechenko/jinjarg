@@ -2,7 +2,8 @@
 
 """CLI-template renderer like m4 but based on Jinja2 and argparse"""
 
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, ChoiceLoader
+from pathlib import Path
 from argparse import ArgumentParser
 
 
@@ -37,5 +38,6 @@ if __name__ == '__main__':
 
     def __str__(self):
         with open(self.args.template) as fd:
-            template = Environment(loader=FileSystemLoader('.')).from_string(fd.read())
+            loaders = [FileSystemLoader(d) for d in ('.', './data') if Path(d).is_dir()]
+            template = Environment(loader=ChoiceLoader(loaders)).from_string(fd.read())
             return template.render(args=self.args)
